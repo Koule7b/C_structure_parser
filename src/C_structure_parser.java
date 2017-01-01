@@ -7,6 +7,17 @@ import static java.lang.Character.isAlphabetic;
 
 /**
  * Created by stepanmudra on 01.01.17.
+ * Gramatika:
+ * S -> IK
+ * I -> structure
+ * K -> CO
+ * O -> {U}B
+ * U -> S
+ * U -> intA | charA | stringA | floatA | doubleA
+ * A -> aBU | +...+ |zBU
+ * B -> C;
+ * C -> a | +...+ |z
+ * C -> λ
  */
 public class C_structure_parser {
     public Stack<Character> zasobnik = new Stack<>();
