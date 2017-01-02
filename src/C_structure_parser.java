@@ -94,12 +94,15 @@ public class C_structure_parser {
             if(zasobnik.peek() == '}'){
                 zasobnik.pop();
                 B();
+            }else {
+                throw new SyntaxException("");
             }
         }else {
             throw new SyntaxException("chyba");
         }
     }
     public void U() throws SyntaxException{
+
         switch (zasobnik.peek()){
             case 'i':
                 zasobnik.pop();
@@ -155,7 +158,7 @@ public class C_structure_parser {
                             zasobnik.push('r');
                             zasobnik.push('t');
                             zasobnik.push('s');
-                            I();
+                            S();
                             return;
                         }
                     }else {
